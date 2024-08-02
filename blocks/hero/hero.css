@@ -9,14 +9,27 @@ main .hero-container {
 .hero {
   position: relative;
   padding: 32px;
-  min-height: 300px;
+  min-height: 95vh;
 }
 
 .hero h1 {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 5%;
   color: white;
+  margin-top: 12%;
+  width: 50%;
+  text-align: right;
+  line-height: normal;
+  font-size: 60px;
+}
+
+@media (width <= 900px) {
+  .hero h1 {
+    width: 100%;
+    font-size: 48px;
+    margin-top: 6rem;
+  }
 }
 
 .hero picture {
