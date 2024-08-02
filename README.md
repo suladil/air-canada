@@ -2,8 +2,8 @@
 
 
 ## Environments
-- Preview: Preview: https://main--dev-xsc-boilerplate--adobedevxsc.hlx.page/
-- Live: https://main--dev-xsc-boilerplate--adobedevxsc.hlx.live/
+- Preview: Preview: https://main--air-canada--adobedevxsc.hlx.page/
+- Live: https://main--air-canada--adobedevxsc.hlx.live/
 
 ## Installation
 
