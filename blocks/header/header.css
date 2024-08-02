@@ -267,6 +267,7 @@ header .nav-wrapper {
 	  flex: 0 1 auto;
 	  position: relative;
 	  font-weight: 500;
+		margin: 0 0.25rem;
 	}
 	
 	header nav#nav .nav-sections .default-content-wrapper > ul > li > ul {
