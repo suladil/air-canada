@@ -21,7 +21,7 @@ main .hero-container {
   width: 50%;
   text-align: right;
   line-height: normal;
-  font-size: 60px;
+  font-size: 54px;
 }
 
 @media (width <= 900px) {
