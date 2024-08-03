@@ -3,7 +3,7 @@
 Built three destination blog sites (Las Vegas, London, and Lisbon) in Edge Delivery Services.
 
 ## Environments
-- Preview: Preview: https://main--air-canada--adobedevxsc.hlx.page/
+- Preview: https://main--air-canada--adobedevxsc.hlx.page/
 - Live: https://main--air-canada--adobedevxsc.hlx.live/blogs/las-vegas
 
 ## Installation
