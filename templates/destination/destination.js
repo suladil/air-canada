@@ -47,7 +47,7 @@ export default async function decorate(block) {
         <div class="info">
           <p><strong>${item.title}</strong></p>
           ${item.teaser.html}
-          <a href="${item.linkUrl}" title="${item.title}" class="button">${item.linkLabel}</a>
+          <a href="${item.linkUrl}" title="${item.title}" target="_blank" class="button">${item.linkLabel}</a>
         </div>
       </div>
     `);
