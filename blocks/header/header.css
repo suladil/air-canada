@@ -284,6 +284,7 @@ header .nav-wrapper {
 	  padding: 1em;
 	  background-color: var(--light-color);
 	  white-space: initial;
+		border-radius: 5px;
 	}
   
 	header nav#nav .nav-sections .default-content-wrapper > ul > li > ul::before {

@@ -23,15 +23,6 @@ main .hero-container {
   line-height: normal;
   font-size: 54px;
 }
-
-@media (width <= 900px) {
-  .hero h1 {
-    width: 100%;
-    font-size: 48px;
-    margin-top: 6rem;
-  }
-}
-
 .hero picture {
   position: absolute;
   z-index: -1;
@@ -44,4 +35,18 @@ main .hero-container {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+@media (width <= 900px) {
+  .hero h1 {
+    width: 100%;
+    font-size: 48px;
+    margin-top: 6rem;
+  }
+}
+
+@media (width <= 768px) {
+  .hero {
+    min-height: 65vh;
+  }
 }

@@ -10,3 +10,46 @@
 .destination .section.blog h3 {
   font-size: 28px;
 }
+
+.destination .section.hotel-offer-banner img {
+  width: 100%;
+}
+
+.destination .section.hotel-offer-banner .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+}
+
+.destination .section.hotel-offer-banner p {
+  margin: 0;
+}
+
+.destination .section.hotel-offer-banner .info p:first-of-type {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.destination .section.hotel-offer-banner .info p:nth-child(2) {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.destination .section.hotel-offer-banner .info a {
+  background-color: #fc2424;
+}
+
+.destination .section.hotel-offer-banner .info a:hover {
+  background-color: #d02020;
+}
+
+@media (width >= 900px) {
+  .destination .section.hotel-offer-banner .info {
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+  }
+}

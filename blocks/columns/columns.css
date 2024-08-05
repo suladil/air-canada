@@ -1,6 +1,7 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .columns img {
@@ -16,18 +17,45 @@
 }
 
 .columns > div > .columns-img-col img {
+  object-fit: cover;
   display: block;
 }
 
+.columns.author {
+  text-align: center;
+}
+
+.columns.author .columns-img-col {
+  flex: unset;
+}
+
+.columns.author .columns-img-col img {
+  height: auto;
+  width: 186px;
+  min-height: unset;
+  margin: 0 auto;
+}
+
+.columns.author div:not(.columns-img-col) p:nth-child(2) {
+  font-size: 16px;
+}
+
 @media (width >= 900px) {
+  .columns.author {
+    text-align: left;
+  }
+
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+
+  .columns > div > .columns-img-col img {
+    min-height: 475px;
   }
 }
