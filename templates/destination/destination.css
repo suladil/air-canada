@@ -11,11 +11,6 @@
   font-size: 28px;
 }
 
-.destination .section.hotel-offer-banner {
-  min-height: 400px;
-  box-sizing: border-box;
-}
-
 .destination .section.hotel-offer-banner img {
   width: 100%;
 }
@@ -31,10 +26,6 @@
 
 .destination .section.hotel-offer-banner p {
   margin: 0;
-}
-
-.destination .section.hotel-offer-banner .columns-img-col {
-  min-height: 250px;
 }
 
 .destination .section.hotel-offer-banner .info p:first-of-type {
