@@ -313,7 +313,7 @@ function sampleRUM(checkpoint, data = {}) {
 		picture.appendChild(img);
 		img.setAttribute('src', `${pathname}?width=${br.width}&format=${ext}&optimize=medium`);
 		img.setAttribute('width', `${br.width}`);
-		img.setAttribute('height','auto');
+		img.setAttribute('height',`250`);
 	  }
 	});
   
