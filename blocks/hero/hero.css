@@ -45,8 +45,8 @@ main .hero-container {
   }
 }
 
-@media (width <= 768px) {
+/* @media (width <= 768px) {
   .hero {
     min-height: 65vh;
   }
-}
+} */
