@@ -37,7 +37,7 @@ export default async function decorate(block) {
     fileName =  fileName.replaceAll('_', '-');
     const path = `/images/${fileName}`;
 
-    const optimizedDemoImage = createOptimizedPicture(path, item.airportcode, true, [{ width: '1174' }]);
+    const optimizedDemoImage = createOptimizedPicture(path, item.airportcode, false, [{ width: '1174' }]);
 
     updatedColumnItems.push(`
       <div id=${item.airportcode}>
