@@ -20,9 +20,5 @@ export default async function decorate(block) {
   const secondSection = footer.querySelector('.section:last-of-type');
   firstSection.classList.add('section-one');
   secondSection.classList.add('section-two');
-
-  // const footerLogoImg = block.querySelector('.section-one .icon-logo > img');
-  // footerLogoImg.setAttribute('height', '24');
-  // footerLogoImg.setAttribute('width' , '184');
   block.append(footer);
 }

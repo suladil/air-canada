@@ -214,16 +214,12 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
-
-
-  console.log("navWrapper: ", navWrapper);
   navWrapper.append(nav);
   block.append(navWrapper);
 
   const headerLogoImg = navWrapper.querySelector('.nav-sections .icon-logo > img');
   headerLogoImg.setAttribute('height', '24');
   headerLogoImg.setAttribute('width' , '184');
-
 
   if (getMetadata('breadcrumbs').toLowerCase() === 'true') {
     navWrapper.append(await buildBreadcrumbs());
