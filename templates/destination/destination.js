@@ -35,7 +35,7 @@ export default async function decorate(block) {
     const parts = imagePath.split('/');
     let fileName = parts[parts.length - 1];
     fileName =  fileName.replaceAll('_', '-');
-    const path = `/images/${fileName}`;
+    const path = `/images/${fileName}?1234`;
 
     const optimizedDemoImage = createOptimizedPicture(path, item.airportcode, false, [{ width: '1174' }]);
 
