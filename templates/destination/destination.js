@@ -11,7 +11,7 @@ async function initialize(slug) {
     
     let dataObj = {};
 
-    dataObj = await AEM_HEADLESS_CLIENT.runPersistedQuery('ac/' + AEM_GRAPHQL_ENDPOINT + ';airportCode=' + slug);
+    dataObj = await AEM_HEADLESS_CLIENT.runPersistedQuery('ac/' + AEM_GRAPHQL_ENDPOINT + ';airportCode=' + slug  + '?cache=' + Math.floor(Date.now() / 1000) );
     const data = dataObj?.data?.hotelOfferList?.items;
     return data;
 
@@ -22,6 +22,7 @@ async function initialize(slug) {
 }
 
 export default async function decorate(block) {
+  const AEM_HOST = await getConfigValue('aem-host');
   const slug = getMetadata('slug');
   if (!slug) return;
 
@@ -31,18 +32,24 @@ export default async function decorate(block) {
   
   // create html
   data.forEach((item) => {
-    const imagePath = item.bannerImage?._path;
-    const parts = imagePath.split('/');
-    let fileName = parts[parts.length - 1];
-    fileName =  fileName.replaceAll('_', '-');
-    const path = `/images/${fileName}?1234`;
+    //const imagePath = item.bannerImage?._path;
+    //const parts = imagePath.split('/');
+    //let fileName = parts[parts.length - 1];
+    //fileName =  fileName.replaceAll('_', '-');
+    //const path = `/images/${fileName}?1234`;
+    
+    //const optimizedDemoImage = createOptimizedPicture(path, item.airportcode, false, [{ width: '1174' }]);
 
-    const optimizedDemoImage = createOptimizedPicture(path, item.airportcode, false, [{ width: '1174' }]);
+    const path = AEM_HOST + item.bannerImage?._path + '?cache=' + Math.floor(Date.now() / 1000) ;
 
     updatedColumnItems.push(`
       <div id=${item.airportcode}>
         <div class="columns-img-col">
-          ${optimizedDemoImage.outerHTML}
+          <picture>
+          <source type="image/webp" srcset="${path}">
+          <img loading="lazy" alt="LAS" src="${path}" width="1174" height="250">
+        </picture>
+        
         </div>
         <div class="info">
           <p><strong>${item.title}</strong></p>
