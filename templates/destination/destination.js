@@ -22,7 +22,6 @@ async function initialize(slug) {
 }
 
 export default async function decorate(block) {
-  const AEM_HOST = await getConfigValue('aem-host');
   const slug = getMetadata('slug');
   if (!slug) return;
 
@@ -40,7 +39,7 @@ export default async function decorate(block) {
     
     //const optimizedDemoImage = createOptimizedPicture(path, item.airportcode, false, [{ width: '1174' }]);
 
-    const path = AEM_HOST + item.bannerImage?._path + '?cache=' + Math.floor(Date.now() / 1000) ;
+    const path = item.bannerImage?._publishUrl + '?cache=' + Math.floor(Date.now() / 1000) ;
 
     updatedColumnItems.push(`
       <div id=${item.airportcode}>
