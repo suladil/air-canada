@@ -3,8 +3,8 @@
 Built three destination blog sites (Las Vegas, London, and Lisbon) in Edge Delivery Services.
 
 ## Environments
-- Preview: https://main--air-canada--suladil.aem.page/
-- Live: https://main--air-canada--suladil.aem.live/blogs/las-vegas
+- Preview: https://main--aircanada--suladil.aem.page/
+- Live: https://main--aircanada--suladil.aem.live/blogs/las-vegas
 
 ## Installation
 
